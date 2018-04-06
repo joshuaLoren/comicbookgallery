@@ -12,23 +12,12 @@ namespace ComicBookGallery.Controllers
     
         /**
          *  @ return ActionResult
+         *  
          */
         public ActionResult Detail()                             //this is an action method
         {
-           
-   
-
-
-            if(DateTime.Today.DayOfWeek == DayOfWeek.Friday)
-            {
-                //Redirect method accepts a string for the target URL
-                //passing / to the constructor sends us to the root of the website
-                return Redirect("/");
-                  
-            }
-
-            //content message of the Controller "type" or "class"
-            return Content("Some message");
+            //view method of the Controller class we are inheriting from
+            return View();
  
         }
 
